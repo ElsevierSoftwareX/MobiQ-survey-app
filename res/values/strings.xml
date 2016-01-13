@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mobi-Q Survey app</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="start">Start Survey</string>
+    <string name="weekly_button">Start Weekly Questions</string>
+    <string name="title_activity_ever">Ever Questions</string>
+    <string name="title_activity_weekly">Weekly Questions</string>
+    <string name="reset">Reset Mobi-Q</string>
+    <string name="results">Survey results</string>
+    <string name="close">Exit Admin mode</string>
+    <string name="exit">Exit MobiQ</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="view_database">View database</string>
+    <string name="sleep">Suspend</string>
+    <string name="resume">Resume</string>
+    <string name="btnGallery">Gallery</string>
+
+    <string-array name="data_array">
+        <item>Apple</item>
+        <item>Orange</item>
+        <item>Lemon</item>
+        <item>Lime</item>
+        <item>Cherry</item>
+        <item>Grape</item>
+        <item>Banana</item>
+        <item>Strawberry</item>
+        <item>Pear</item>
+        <item>Plum</item>
+        <item>Apricot</item>
+        <item>Pineapple</item>
+        <item>Mango</item>
+        <item>Coconut</item>
+    </string-array>
+    <string-array name="sports_array">
+        <item>soccer</item>
+        <item>Gaelic football</item>
+        <item>Hurling</item>
+        <item>Camogie</item>
+        <item>Rugby</item>
+        <item>Hockey</item>
+        <item>Netball</item>
+        <item>Swimming</item>
+        <item>Cricket</item>
+        <item>Tennis</item>
+        <item>Basketball</item>
+        <item>Table Tennis</item>
+        <item>Volleyball</item>
+        <item>Gymnastics</item>
+        <item>Athletics</item>
+        <item>Other Sports not listed above e.g. Karate, Cycling, Badminton, Rowing, Golf, etc</item>
+    </string-array>
+    <string-array name="club_array">
+        <item>Orchestra/Band</item>
+        <item>Choir</item>
+        <item>Christian Union</item>
+        <item>Debating Society</item>
+        <item>Chess Club</item>
+        <item>Scouts/Guides</item>
+        <item>Drama</item>
+        <item>Technology</item>
+        <item>Arts/Textile Club</item>
+        <item>Ceramics</item>
+        <item>Child care</item>
+        <item>Garden Club</item>
+        <item>Irish Culture</item>
+        <item>Cooking Club</item>
+        <item>Other Club/team activities not listed above e.g. Duke of Edinburgh, Equine Club, Computer Club or Lego Club etc.</item>
+    </string-array>
+    <string-array name="non_club_array">
+        <item>Youth Club</item>
+        <item>Volunteer work</item>
+        <item>Church groups</item>
+        <item>Leisure centre</item>
+        <item>Console/PC gaming (alone/offline)</item>
+        <item>Console/PC gaming (with friends you know outside of the online game)</item>
+        <item>Cinema</item>
+        <item>Coffee Shop</item>
+        <item>Other non-club outside school activities not listed above</item>
+    </string-array>
+    <string-array name="sports_array_label">
+        <item>Soccer</item>
+        <item>GaelicFootball</item>
+        <item>Hurling</item>
+        <item>Camogie</item>
+        <item>Rugby</item>
+        <item>Hockey</item>
+        <item>Netball</item>
+        <item>Swimming</item>
+        <item>Cricket</item>
+        <item>Tennis</item>
+        <item>Basketball</item>
+        <item>TableTennis</item>
+        <item>Volleyball</item>
+        <item>Gymnastics</item>
+        <item>Athletics</item>
+        <item>SportsOther</item>
+    </string-array>
+    <string-array name="club_array_label">
+        <item>Orchestra</item>
+        <item>Choir</item>
+        <item>ChristianUnion</item>
+        <item>DebatingSociety</item>
+        <item>ChessClub</item>
+        <item>ScoutsGuides</item>
+        <item>Drama</item>
+        <item>Technology</item>
+        <item>ArtsTextileClub</item>
+        <item>Ceramics</item>
+        <item>ChildCare</item>
+        <item>GardenClub</item>
+        <item>IrishCulture</item>
+        <item>CookingClub</item>
+        <item>ClubOther</item>
+    </string-array>
+    <string-array name="non_club_array_label">
+        <item>YouthClub</item>
+        <item>VolunteerWork</item>
+        <item>ChurchGroups</item>
+        <item>LeisureCentre</item>
+        <item>PCgamingAlone</item>
+        <item>PCgamingFriends</item>
+        <item>Cinema</item>
+        <item>CoffeeShop</item>
+        <item>NonClubOther</item>
+    </string-array>
+
+    <!--
+     <string name="location_file_url">http://suol2suol.netii.net/uploadlocation.php</string>
+     <string name="monday_file_url">http://suol2suol.netii.net/uploadmonday.php</string>
+     <string name="thursday_file_url">http://suol2suol.netii.net/uploadthursday.php</string>
+     <string name="calls_file_url">http://suol2suol.netii.net/uploadcalls.php</string>
+     <string name="sms_file_url">http://suol2suol.netii.net/uploadsms.php</string>
+     <string name="device_info_file_url">http://suol2suol.netii.net/uploaddeviceinfo.php</string>
+     <string name="problem_file_url">http://suol2suol.netii.net/uploadproblem.php</string>
+    -->
+    <!--
+    <string name="location_file_url">http://suol2suol.dx.am/uploaders/uploadlocation.php</string>
+     <string name="monday_file_url">http://suol2suol.dx.am/uploaders/uploadmonday.php</string>
+     <string name="thursday_file_url">http://suol2suol.dx.am/uploaders/uploadthursday.php</string>
+     <string name="calls_file_url">http://suol2suol.dx.am/uploaders/uploadcalls.php</string>
+     <string name="sms_file_url">http://suol2suol.dx.am/uploaders/uploadsms.php</string>
+     <string name="device_info_file_url">http://suol2suol.dx.am/uploaders/uploaddeviceinfo.php</string>
+     <string name="problem_file_url">http://suol2suol.dx.am/uploaders/uploadproblem.php</string>
+     <string name="picture_url">http://suol2suol.dx.am/uploaders/uploadpics.php</string>
+     <string name="picture_text_url">http://suol2suol.dx.am/uploaders/uploadpictext.php</string>
+    -->
+
+    <string name="location_file_url">http://77.68.41.204/mobiq/uploaders/uploadlocation2.php</string>
+    <string name="monday_file_url">http://77.68.41.204/mobiq/uploaders/uploadmonday2.php</string>
+    <string name="thursday_file_url">http://77.68.41.204/mobiq/uploaders/uploadthursday2.php</string>
+    <string name="calls_file_url">http://77.68.41.204/mobiq/uploaders/uploadcalls2.php</string>
+    <string name="sms_file_url">http://77.68.41.204/mobiq/uploaders/uploadsms2.php</string>
+    <string name="device_info_file_url">http://77.68.41.204/mobiq/uploaders/uploaddeviceinfo2.php</string>
+    <string name="problem_file_url">http://77.68.41.204/mobiq/uploaders/uploadproblem2.php</string>
+    <string name="picture_url">http://77.68.41.204/mobiq/uploaders/uploadpics2.php</string>
+    <string name="picture_text_url">http://77.68.41.204/mobiq/uploaders/uploadpictext2.php</string>
+    <string name="location_post_url">http://77.68.41.204/mobiq/post/postlocation2.php</string>
+    <string name="monday_post_url">http://77.68.41.204/mobiq/post/postmondaysurvey2.php</string>
+    <string name="thursday_post_url">http://77.68.41.204/mobiq/post/postthursdaysurvey2.php</string>
+    <string name="device_info_post_url">http://77.68.41.204/mobiq/post/postdeviceinfo2.php</string>
+    <string name="problem_post_url">http://77.68.41.204/mobiq/post/postproblem2.php</string>
+    <string name="database_view_url">http://77.68.41.204/mobiq/dbquery/mobiqdata.html</string>
+    <string name="photo_info_url">http://77.68.41.204/mobiq/post/postphotoinfo2.php</string>
+
+    <!--
+     <string name="location_post_url">http://suol2suol.netii.net/survey/mobiqlocation.php</string>
+     <string name="monday_post_url">http://suol2suol.netii.net/survey/mondaysurvey.php</string>
+     <string name="thursday_post_url">http://suol2suol.netii.net/survey/thursdaysurvey.php</string>
+     <string name="device_info_post_url">http://suol2suol.netii.net/survey/mobiqdeviceinfo.php</string>
+     <string name="problem_post_url">http://suol2suol.netii.net/survey/mobiqproblem.php</string>
+    -->
+
+
+    <!--
+    <string name="location_post_url">http://suol2suol.dx.am/post/postlocation.php</string>
+     <string name="monday_post_url">http://suol2suol.dx.am/post/postmondaysurvey.php</string>
+     <string name="thursday_post_url">http://suol2suol.dx.am/post/postthursdaysurvey.php</string>
+     <string name="device_info_post_url">http://suol2suol.dx.am/post/postdeviceinfo.php</string>
+     <string name="problem_post_url">http://suol2suol.dx.am/post/postproblem.php</string>
+     
+     <string name="database_view_url">http://suol2suol.dx.am/survey/mobiqdata.html</string>
+     <string name="photo_info_url">http://suol2suol.dx.am/post/postphotoinfo.php</string>
+    -->
+
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_sports_list">Sports</string>
+    <string name="title_clubs_list">Practice/Club Activities</string>
+    <string name="title_non_clubs_list">Outside School Activities</string>
+    <string name="title_activity_other_sport">Other Sports</string>
+    <string name="title_activity_other_club">Other Practice/Club Activities</string>
+    <string name="title_activity_other_non_club">Other Outside School Activities</string>
+    <string name="title_activity_show_results">Survey Results</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="your">Your weekly survey is about to start</string>
+    <string name="nothing"></string>
+    <string name="ok">Okay!\nstart survey</string>
+    <string name="postpone">Postpone\n(10 mins)</string>
+    <string name="title_activity_dialog">Alert</string>
+    <string name="welcome">Welcome to Mobi-Q Survey</string>
+    <string name="liketo">yes, I would like to</string>
+    <string name="notliketo">no, get me outta here</string>
+    <string name="btnContinue">No thanks</string>
+    <string name="btnTakePic">Take picture</string>
+    <string name="btnUpload">Upload</string>
+    <string name="imageViewDescrp">photo taken from cameraphoto taken from camera</string>
+    <string name="text1">Thanks for taking part in the study.\nDon\'t forget you can upload a photo to tell us about your social life</string>
+    <string name="text_camera">Please upload a photo to tell us about your social life. PLEASE DO NOT INCLUDE FACES IN THE PHOTO.</string>
+    <string name="thankyou1">Thanks for taking part in the study!</string>
+    <string name="title_activity_admin_login">Admin Login</string>
+    <string name="title_activity_user_interface">MobiQ app</string>
+    <string name="title_activity_mode_select">User Mode Selection</string>
+    <string name="title_activity_report_problem">Report</string>
+    <string name="txtview_report">Tell us about any problems with Mobi-Q operation</string>
+    <string name="txtview_number">Please enter your phone number here:</string>
+    <string name="title_activity_camera">MobiQ Photo</string>
+    <string name="title_activity_input_number">Enter Phone Number</string>
+    <string name="txtview_thankyou">Thank you for installing the MobiQ app. Every Mondays and Thursdays you will be reminded to respond to short survey questions. If you do not receive this reminder please contact the Administrator. Don\'t forget to enable your phone\'s GPS functionality. If you would like to report any problems with the app, use the report problem section accessible through user mode operation.  </string>
+    <string name="txtview_thankyouweekly">Thank you for taking part. Remember you can upload a photo as part of the MobiQ study.  </string>
+    <string name="title_activity_thankyou">Welcome to MobiQ</string>
+    <string name="title_activity_view_code">10 digit app Code</string>
+    <string name="title_activity_thank_you_weekly">MobiQ app</string>
+
+</resources>

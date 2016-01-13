@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity_old" >
+
+   
+    
+      <ScrollView
+   android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+	 android:focusableInTouchMode="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+   	 android:layout_height="wrap_content">  
+    
+    
+    <Button
+        android:id="@+id/start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickButtonStart"
+        android:text="@string/start" />
+    
+     <Button
+        android:id="@+id/reset"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/start"
+        android:onClick="onClickButtonReset"
+        android:text="@string/reset" />
+     
+     
+        <Button
+        android:id="@+id/sleep"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/reset"
+        android:onClick="onClickButtonSleep"
+        android:text="@string/sleep" />
+        
+        
+         <Button
+        android:id="@+id/resume"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sleep"
+        android:onClick="onClickButtonResume"
+        android:text="@string/resume" />
+     
+      <Button
+        android:id="@+id/results"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/resume"
+        android:onClick="onClickButtonResults"
+        android:text="@string/results" />
+      
+      <Button
+        android:id="@+id/close"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/results"
+        android:onClick="onClickButtonClose"
+        android:text="@string/close" />
+      
+        <Button
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/close"
+        android:onClick="onClickButtonView"
+        android:text="@string/view_database" />
+        
+        
+        
+        
+        </RelativeLayout>
+        </ScrollView>
+
+</RelativeLayout>

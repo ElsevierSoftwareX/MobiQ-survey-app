@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ThankYouWeeklyActivity" >
+
+    
+    
+      <TextView
+        android:id="@+id/thankyouweeklyTextview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="25sp"
+         android:layout_marginBottom="25sp"
+        android:text="@string/txtview_thankyouweekly" />
+           
+             
+      
+      
+      
+      
+      
+      
+      
+   
+                          
+                <Button
+      android:id="@+id/buttonThankyouweeklyClose"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_marginLeft="85sp"
+      android:layout_below="@+id/thankyouweeklyTextview"
+       android:clickable="true"
+       android:onClick="onClickThankyouweeklyClose"
+      android:text="@string/exit" />
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</RelativeLayout>

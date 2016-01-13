@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ViewCodeActivity" >
+
+      
+    
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+   	 android:layout_height="wrap_content">  
+    
+        
+          <TextView
+        android:id="@+id/codeTextview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="25sp"
+        android:text="" />
+           
+          
+   <TextView
+        android:id="@+id/codeTextview1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/codeTextview"
+         android:layout_marginTop="25sp"
+        android:text="" />
+           
+                
+   
+   <TextView
+        android:id="@+id/codeTextview2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="25sp"
+          android:layout_below="@+id/codeTextview1"
+        android:text="" />
+           
+   
+     <TextView
+        android:id="@+id/codeTextview3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="25sp"
+          android:layout_below="@+id/codeTextview2"
+        android:text="" />
+     
+       <TextView
+        android:id="@+id/codeTextview4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="25sp"
+          android:layout_below="@+id/codeTextview3"
+        android:text="" />
+       
+       
+                <Button
+      android:id="@+id/btnCodeExit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_marginLeft="85sp"
+      android:layout_below="@+id/codeTextview4"
+       android:clickable="true"
+       android:onClick="onClickCodeExit"
+      android:text="@string/exit" />
+                
+                </RelativeLayout>
+   
+                </ScrollView>
+
+</RelativeLayout>

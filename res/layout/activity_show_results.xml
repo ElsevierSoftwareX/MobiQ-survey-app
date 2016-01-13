@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context=".ShowResults" >
+     
+    <ScrollView
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<TextView
+        android:id="@+id/mainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+   		 />
+ </ScrollView>
+
+   
+      <Button
+      android:id="@+id/show"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:clickable="true"
+      android:onClick="onClickShow"
+      android:text="Display" />
+    
+    
+    <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+       android:clickable="true"
+      android:onClick="onClick"
+      android:layout_below="@id/show"
+       android:layout_alignParentRight="true"
+     
+      android:text="@string/back" />
+    
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/com/csit/packages/mobilesurvey/CallMonitor.java" />
+        <ignore path="src/com/csit/packages/mobilesurvey/DeviceInfoHttpService.java" />
+        <ignore path="src/com/csit/packages/mobilesurvey/InfoGetter.java" />
+        <ignore path="src/com/csit/packages/mobilesurvey/LocationHttpService.java" />
+        <ignore path="src/com/csit/packages/mobilesurvey/MobiQBroadcastReceiver.java" />
+        <ignore path="src/com/csit/packages/mobilesurvey/MondayQHttpService.java" />
+        <ignore path="src/com/csit/packages/mobilesurvey/ReportProblemActivity.java" />
+        <ignore path="src/com/csit/packages/mobilesurvey/SmsRecorder.java" />
+        <ignore path="src/com/csit/packages/mobilesurvey/ThursdayQHttpService.java" />
+    </issue>
+    <issue id="Wakelock">
+        <ignore path="src/com/csit/packages/mobilesurvey/DeviceInfoHttpService.java" />
+        <ignore path="src/com/csit/packages/mobilesurvey/LocationHttpService.java" />
+        <ignore path="src/com/csit/packages/mobilesurvey/MondayQHttpService.java" />
+        <ignore path="src/com/csit/packages/mobilesurvey/SmsLogHttpService.java" />
+        <ignore path="src/com/csit/packages/mobilesurvey/ThursdayQHttpService.java" />
+    </issue>
+</lint>

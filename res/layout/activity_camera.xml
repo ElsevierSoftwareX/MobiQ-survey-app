@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".CameraActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_camera" />
+    
+    <Button
+        android:id="@+id/btnContinue"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_alignParentLeft="true"
+        android:text="@string/btnContinue"
+        android:onClick="onClickContinue" />
+    
+     <Button
+        android:id="@+id/btnTakePic"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_toRightOf="@id/btnContinue"
+        android:text="@string/btnTakePic" 
+        android:onClick="onClickCallCam"/>
+     
+     <Button
+        android:id="@+id/btnGallery"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_toRightOf="@id/btnTakePic"
+         android:visibility="invisible"
+        android:text="@string/btnGallery" 
+        android:onClick="onClickGallery"/>
+     
+     <Button
+        android:id="@+id/btnUpload"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_alignParentRight="true"
+        android:text="@string/btnUpload" 
+        android:visibility="invisible"
+        android:onClick="onClickUploadPic"/>
+
+      <EditText
+      	android:id="@+id/editTextCamera"
+      	android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:maxLength="50"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@id/btnContinue"
+		android:hint="Caption..."
+		android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/photo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/editTextCamera"
+        android:layout_above="@+id/output"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/imageViewDescrp" />
+    
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    
+</RelativeLayout>

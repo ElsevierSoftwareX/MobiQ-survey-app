@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.csit.packages.mobilesurvey"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.csit.packages.mobilesurvey.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <receiver
+            android:name="com.csit.packages.mobilesurvey.MobiQBroadcastReceiver"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.csit.packages.mobilesurvey.CallMonitor" >
+            <intent-filter android:priority="1" >
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.csit.packages.mobilesurvey.EverActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_ever" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.EverOthersActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_ever" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.WeeklyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_weekly" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.WeeklySportsClubActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_weekly" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.ListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_list" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.SportsListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_sports_list" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.ClubsListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_clubs_list" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.NonClubsListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_non_clubs_list" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.SportsRegularActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_sports_list" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.ClubsRegularActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_clubs_list" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.NonClubsRegularActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_non_clubs_list" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.OtherSportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_other_sport" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.OtherClubActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_other_club" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.OtherNonClubActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_other_non_club" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.ShowResults"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_show_results" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.MondayDialog"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_dialog"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.ThursdayDialog"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_dialog"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.CameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_camera" >
+        "
+        </activity>
+
+        <service
+            android:name="com.csit.packages.mobilesurvey.MondayQHttpService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="com.csit.packages.mobilesurvey.ThursdayQHttpService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="com.csit.packages.mobilesurvey.LocationHttpService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="com.csit.packages.mobilesurvey.SmsLogHttpService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="com.csit.packages.mobilesurvey.CallLogHttpService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="com.csit.packages.mobilesurvey.DeviceInfoHttpService"
+            android:enabled="true" >
+        </service>
+
+        <activity
+            android:name="com.csit.packages.mobilesurvey.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.AdminLoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_admin_login" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.UserInterfaceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_user_interface" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.ModeSelectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_mode_select" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.ReportProblemActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_report_problem" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.InputNumberActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_input_number" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.ThankyouActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_thankyou" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.ViewCodeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_view_code" >
+        </activity>
+        <activity
+            android:name="com.csit.packages.mobilesurvey.ThankYouWeeklyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_thank_you_weekly" >
+        </activity>
+    </application>
+
+</manifest>
